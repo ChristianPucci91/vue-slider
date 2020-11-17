@@ -15,8 +15,8 @@ var app = new Vue({
       "img/image2.jpg",
       "img/image3.jpg",
       "img/image4.jpg"
-    ],
-    circles:[]
+    ]
+
   },
    methods: {
      nextFoto: function () {
@@ -34,13 +34,7 @@ var app = new Vue({
          this.fotoIndex = (this.foto.length -1);
        }
        console.log(this.fotoIndex)
-     },
-     stampaCircle: function () {
-
-       for (let i = 0; i < app.foto.length; i++) {
-         // this.circles += '<i class="fas fa-circle"></i>';
-         this.circles.push('<i class="fas fa-circle"></i>');
-       }
      }
+
   }
 })
