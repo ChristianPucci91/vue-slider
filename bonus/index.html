@@ -24,7 +24,7 @@
                   <i class="fas fa-angle-right"></i>
               </div>
               <div class="nav">
-                <i v-for="item in foto" class="fas fa-circle" v-if="(circle == fotoIndex) ? 'active':'' "></i>
+                <i v-for="(item,index) in foto" class = "fas fa-circle" :class = "(index == fotoIndex) ? 'active' : '' "></i>
               </div>
           </div>
       </div>
