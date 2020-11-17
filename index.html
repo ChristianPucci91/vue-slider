@@ -23,8 +23,8 @@
               <div class="next" @click="nextFoto">
                   <i class="fas fa-angle-right"></i>
               </div>
-              <div class="nav">
-                <i class="fas fa-circle"></i>
+              <div class="nav" v-for="index in circles">
+               {{index}}
               </div>
           </div>
       </div>
