@@ -36,9 +36,12 @@ var app = new Vue({
 
        if (this.fotoIndex < 0) {
          this.fotoIndex = (this.foto.length -1);
-      
+
        }
        console.log(this.fotoIndex)
+     },
+     clickCircle: function (index) {
+      this.fotoIndex = index
      }
 
   }
